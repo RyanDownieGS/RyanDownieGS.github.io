@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- To do: "2023 Graduated with MLIS" is an H5 but can just be text; add bootstrap tooltip  -->
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -36,14 +36,18 @@
   <style>
     body {
       font-style: normal;
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-family: Georgia, "Times New Roman", Times, serif;
     }
     .linkbutton {
-      background-color: rgb(154, 190, 211);
+      background-color: rgb(214, 215, 216);
+      color:black;
       padding: 15px 15px;
       border-style: groove;
       display: inline-block
       }
+    .centered {
+      text-align: center;
+    }
   </style>
 </head>
 
@@ -93,7 +97,7 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" alt="Ryan Downie Profile photo." class="img-fluid" alt="">
+            <img src="assets/img/profile-img.jpg" alt="Ryan Downie Profile photo." class="img-fluid">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Student, Trainer, &amp; Writer.</h3>
@@ -117,15 +121,11 @@
                 <ul>
                   <li><i class="bi bi-caret-right"></i> <strong>Degree:</strong> <span>Bachelor, UO 2019; Master, DU, 2023</span></li>
                   <li><i class="bi bi-caret-right"></i> <strong>Email:</strong> <span>ryan.downiea@gmail.com</span></li>
-                  <li><i class="bi bi-caret-right"></i> <strong>Writing Services:</strong> <span>Available</span></li>
-                  <li><i class="bi bi-caret-right"></i> <strong>Trainer Services:</strong> <span>Available</span></li> 
+                  <li><i class="bi bi-caret-right"></i> <strong>Credentials:</strong> <span>Master's degree expected to be completed in March, 2023. ACE certification expected to be completed December, 2022. First novel expected to be completed by June, 2023.<br>More information can be found here:
+                    <a class="linkbutton" href="https://youtu.be/xm3YgoEiEDc" target="_self" data-toggle="tooltip" title="Or don't">Click me</a></span></li>
                 </ul>
               </div>
             </div>
-            <p>
-              Master's degree expected to be completed in March, 2023. ACE certification expected to be completed December, 2022. First novel expected to be completed by June, 2023.<br>More information can be found here:
-              <a class="linkbutton" href="https://youtu.be/xm3YgoEiEDc" target="blank">Click me</a>
-            </p>
           </div>
         </div>
 
@@ -253,41 +253,40 @@
       </div>
     </div>
 
+    <h3 class="centered">Sample Texts</h3>
+
     <div class="row Writing Portfolio-container" data-aos="fade-up" data-aos-delay="200">
       <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
         <div class="Writing Portfolio-wrap">
-          <img src="assets/img/Writing Portfolio/Writing Portfolio-1.jpg" class="img-fluid" alt="">
           <div class="Writing Portfolio-info">
             <h4>Prologue to "They Awoke Mountains"</h4>
             <p>A two page prologue to the novel "They Awoke Mountains".</p>
             <div class="Writing Portfolio-links">
-              <a href="assets/prologue-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 1"><i class="bx bx-plus"></i></a>
+              <a href="assets/prologue-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 1"><i class="bi bi-file-earmark-richtext"></i></a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-web">
-        <div class="Writing Portfolio-wrap">
-          <img src="assets/img/Writing Portfolio/Writing Portfolio-2.jpg" class="img-fluid" alt="">
+        <div class="Writing Portfolio-wrap">         
           <div class="Writing Portfolio-info">
             <h4>Rising Smoke</h4>
             <p>A sample of the first chapter from "They Awoke Mountains".</p>
             <div class="Writing Portfolio-links">
-              <a href="assets/rising-smoke-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 2"><i class="bx bx-plus"></i></a>
+              <a href="assets/rising-smoke-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 2"><i class="bi bi-file-earmark-richtext"></i></a>
             </div>
           </div>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
-        <div class="Writing Portfolio-wrap">
-          <img src="assets/img/Writing Portfolio/Writing Portfolio-3.jpg" class="img-fluid" alt="">
+        <div class="Writing Portfolio-wrap">          
           <div class="Writing Portfolio-info">
             <h4>H.M.S. Omitted</h4>
             <p>A short poem.</p>
             <div class="Writing Portfolio-links">
-              <a href="assets/hms-omitted.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 3"><i class="bx bx-plus"></i></a>
+              <a href="assets/hms-omitted.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 3"><i class="bi bi-file-earmark-richtext"></i></a>
               
             </div>
           </div>
@@ -296,12 +295,11 @@
 
       <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-card">
         <div class="Writing Portfolio-wrap">
-          <img src="assets/img/Writing Portfolio/Writing Portfolio-4.jpg" class="img-fluid" alt="">
           <div class="Writing Portfolio-info">
             <h4>The Visitation</h4>
             <p>A short story.</p>
             <div class="Writing Portfolio-links">
-              <a href="assets/the-visitation-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 4"><i class="bx bx-plus"></i></a>
+              <a href="assets/the-visitation-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 4"><i class="bi bi-file-earmark-richtext"></i></a>
             </div>
           </div>
         </div>
@@ -315,12 +313,11 @@
 
       <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
         <div class="Writing Portfolio-wrap">
-          <img src="assets/img/Writing Portfolio/Writing Portfolio-6.jpg" class="img-fluid" alt="">
           <div class="Writing Portfolio-info">
             <h4>The Wrong Address</h4>
             <p>A sample of a short story.</p>
             <div class="Writing Portfolio-links">
-              <a href="assets/wrong-address-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 5"><i class="bx bx-plus"></i></a>
+              <a href="assets/wrong-address-sample.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 5"><i class="bi bi-file-earmark-richtext"></i></a>
             </div>
           </div>
         </div>
@@ -346,6 +343,9 @@
             <p>The percentage of American adults meeting both the recommended aerobic and anaerobic activity levels.</p>
           </div>
         </div>
+
+        <h3 class="centered">Trainer Services</h3>
+
         <div class="row">
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
@@ -442,18 +442,20 @@
     <div class="count-box">
       <i class="bi bi-mortarboard-fill"></i>
       <span data-purecounter-end="2023" data-purecounter-decimals="0" data-purecounter-duration="1" class="purecounter"></span>
-      <h5>Graduated with MLIS degree</h5>
+      <p>Graduated with MLIS degree</p>
     </div>
   </div>
+
+<h3 class="centered">MLIS Work Samples</h3>
+
 <div class="container" data-aos="fade-up">
   <div class="row Writing Portfolio-container" data-aos="fade-up" data-aos-delay="200">
     <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
       <div class="Writing Portfolio-wrap">
-        <img src="assets/img/Writing Portfolio/Writing Portfolio-1.jpg" class="img-fluid" alt="">
         <div class="Writing Portfolio-info">
           <h4>RPF Proposal for an Archival Data Storage Comparison Model</h4>
           <div class="Writing Portfolio-links">
-            <a href="assets/rpf-asset.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 1"><i class="bx bx-plus"></i></a>         
+            <a href="assets/rpf-asset.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 1"><i class="bi bi-file-earmark-richtext"></i></a>         
           </div>
         </div>
       </div>
@@ -461,11 +463,10 @@
 
     <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-web">
       <div class="Writing Portfolio-wrap">
-        <img src="assets/img/Writing Portfolio/Writing Portfolio-2.jpg" class="img-fluid" alt="">
         <div class="Writing Portfolio-info">
           <h4>Outreach Program Plan Proposal</h4>
           <div class="Writing Portfolio-links">
-            <a href="assets/Outreach Program Plan proposal.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 2"><i class="bx bx-plus"></i></a>            
+            <a href="assets/Outreach Program Plan proposal.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 2"><i class="bi bi-file-earmark-richtext"></i></a>            
           </div>
         </div>
       </div>
@@ -473,11 +474,10 @@
 
     <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
       <div class="Writing Portfolio-wrap">
-        <img src="assets/img/Writing Portfolio/Writing Portfolio-3.jpg" class="img-fluid" alt="">
         <div class="Writing Portfolio-info">
           <h4>Archives and the French Revolution: The Phoenix Effect</h4>
           <div class="Writing Portfolio-links">
-            <a href="assets/archives and the french revolution.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 3"><i class="bx bx-plus"></i></a>
+            <a href="assets/archives and the french revolution.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 3"><i class="bi bi-file-earmark-richtext"></i></a>
         </div>
       </div>
     </div>
@@ -487,11 +487,10 @@
   <div class="row Writing Portfolio-container" data-aos="fade-up" data-aos-delay="200"> 
      <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-card">
       <div class="Writing Portfolio-wrap">
-        <img src="assets/img/Writing Portfolio/Writing Portfolio-4.jpg" class="img-fluid" alt="">
         <div class="Writing Portfolio-info">
           <h4>Community Analysis</h4>
           <div class="Writing Portfolio-links">
-            <a href="assets/Community Analysis.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 4"><i class="bx bx-plus"></i></a>
+            <a href="assets/Community Analysis.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 4"><i class="bi bi-file-earmark-richtext"></i></a>
           </div>
         </div>
       </div>
@@ -505,11 +504,10 @@
 
     <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
       <div class="Writing Portfolio-wrap">
-        <img src="assets/img/Writing Portfolio/Writing Portfolio-6.jpg" class="img-fluid" alt="">
         <div class="Writing Portfolio-info">
           <h4>Collection Development Proposal</h4>
           <div class="Writing Portfolio-links">
-            <a href="assets/collection development propossal.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 5"><i class="bx bx-plus"></i></a>
+            <a href="assets/collection development propossal.pdf" data-gallery="Writing PortfolioGallery" class="Writing Portfolio-lightbox" title="Writing Sample 5"><i class="bi bi-file-earmark-richtext"></i></a>
           </div>
         </div>
       </div>
@@ -573,7 +571,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" data-toggle="tooltip" title="Form does not work, please use email instead">Send Message</button></div>
             </form>
 
           </div>
