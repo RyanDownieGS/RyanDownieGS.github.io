@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- To do: "2023 Graduated with MLIS" is an H5 but can just be text; add bootstrap tooltip  -->
+<!-- Changes made outside of altering the basic content itself (I believe there are many more, but I changed so much that the following are just what I confidently remember doing, with more descriptions in comments provided for individual sections): 13-14 uploaded new favicons but retained original names; 36-51 added CSS; edited the nav 62-69; 77-85 edited the hero section; 90-136 renamed and redid what is now the About section; 141-211 Resume section; 213-328 Writing portfolio section with many changes; 330-430 Trainer section; 432-518 LIS section; 571 added Bootstrap tooltip to contact form -->
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -9,7 +9,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- Favicons: changed to custom favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -33,7 +33,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  <style>
+  <style> /* Changed font style and family, added CSS for the link button and for class="centered" */
     body {
       font-style: normal;
       font-family: Georgia, "Times New Roman", Times, serif;
@@ -54,12 +54,12 @@
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  
   <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
-    <nav id="navbar" class="navbar nav-menu">
+    <nav id="navbar" class="navbar nav-menu"> <!-- Changed icons, titles, and appropriate #s-->
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bi bi-mortarboard-fill"></i> <span>Education</span></a></li>
@@ -69,11 +69,11 @@
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       
       </ul>
-    </nav><!-- .nav-menu -->
+    </nav>
 
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
+  <!-- ======= Hero Section ======= Updated information here and removed all but the linkedIn social links-->
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Ryan Downie</h1>
@@ -87,6 +87,7 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
+    <!-- Redid all of the content within this section, changed the layout somewhat-->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -95,9 +96,10 @@
           <p>I am currently studying both Library and Information Sciences as a Master's student at the University of Denver, and studying with the American Council on Exercise to be a personal fitness trainer. Above all, though, I am a writer producing short stories of horror, fantasy, and thrillers, as well as fantasy novels.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" alt="Ryan Downie Profile photo." class="img-fluid">
+        <div class="row"> 
+          <div class="col-lg-4"> 
+            <!-- Changed image and added alt text-->
+            <img src="assets/img/profile-img.jpg" alt="Ryan Downie's Profile photo." class="img-fluid">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Student, Trainer, &amp; Writer.</h3>
@@ -106,7 +108,7 @@
             </p>
             <div class="row">
               <div class="col-lg-6">
-                <ul>
+                <ul> <!-- Changed the list arrow icons and the categories of the list items-->
                   <li><i class="bi bi-caret-right"></i> <strong>Birthday:</strong> <span>December 1994</span></li>
                   <li><i class="bi bi-caret-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
                   <li><i class="bi bi-caret-right"></i> <strong>State:</strong> <span>Oregon, USA</span></li>
@@ -118,11 +120,12 @@
                 </ul>
               </div>
               <div class="col-lg-6">
+                <!-- Made a second list to address issues in the layout, and added a link through a button with a boostrap tooltip... yes, it is a Rick Roll-->
                 <ul>
                   <li><i class="bi bi-caret-right"></i> <strong>Degree:</strong> <span>Bachelor, UO 2019; Master, DU, 2023</span></li>
                   <li><i class="bi bi-caret-right"></i> <strong>Email:</strong> <span>ryan.downiea@gmail.com</span></li>
                   <li><i class="bi bi-caret-right"></i> <strong>Credentials:</strong> <span>Master's degree expected to be completed in March, 2023. ACE certification expected to be completed December, 2022. First novel expected to be completed by June, 2023.<br>More information can be found here:
-                    <a class="linkbutton" href="https://youtu.be/xm3YgoEiEDc" target="_self" data-toggle="tooltip" title="Or don't">Click me</a></span></li>
+                    <a class="linkbutton" href="https://youtu.be/xm3YgoEiEDc" target="_self" data-toggle="tooltip" title="Or don't">Click me</a></span></li> <!-- Tooltip included here-->
                 </ul>
               </div>
             </div>
@@ -132,7 +135,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- Deleted Facts section and transferred some of the divs elsewhere where they were deemed more appropriate -->
+    <!-- Deleted Facts section and transferred some of the divs throughout the page where they were deemed more appropriate -->
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
@@ -141,7 +144,7 @@
         <div class="section-title">
           <h2>Resume</h2>
         </div>
-
+        <!-- In this section, primarily added lists, changed the content itself, extended it, and divided it into two columns so as to not appear clunky as a long list  -->
         <div class="row">
           <div class="col-lg-6">
             <h3 class="resume-title">Summary</h3>
@@ -153,7 +156,6 @@
                 <li>ryan.downiea@gmail.com</li>
               </ul>
             </div>
-
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Master of Library &amp; Information Science</h4>
@@ -205,14 +207,13 @@
             </div>
           </div>
         </div>
-
       </div>
     </section><!-- End Resume Section -->
 
  <!-- ======= Writing Portfolio Section ======= -->
  <section id="Writing Portfolio" class="Writing Portfolio section-bg">
   <div class="container" data-aos="fade-up">
-
+<!-- In this section, I changed the bi bi icons, adjusted the purecounter (223), added a blockquote with citation (227-228), added a list with items and sub-items (I used lists within a list as I wasn't sure how else to create indents), and added multiple files that can be opened-->
     <div class="section-title">
       <h2>Writing Portfolio</h2>
     </div>
@@ -253,7 +254,7 @@
       </div>
     </div>
 
-    <h3 class="centered">Sample Texts</h3>
+    <h3 class="centered">Sample Texts</h3> <!-- Added h3 to address issue of h4s below -->
 
     <div class="row Writing Portfolio-container" data-aos="fade-up" data-aos-delay="200">
       <div class="col-lg-4 col-md-6 Writing Portfolio-item filter-app">
@@ -322,16 +323,14 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </section><!-- End Writing Portfolio Section -->   
 
     <!-- ======= Trainer Services Section ======= -->
     <section id="trainer services" class="services">
       <div class="container" data-aos="fade-up">
-
+    <!-- changed all of the bi bi and bx bx icons, edited the purecounter and its duration, I do not know what the lines beginning with the path element (354, 367, 380, 393, 406, and 419) are performing or used for, but they are extensive -->
         <div class="section-title">
           <h2>Personal Trainer Services</h2>
           <p>I am a personal trainer certified through the American Council of Exercise to work with individuals and small groups. Regardless of if you've never been in a gym before, or if you're already a gym rat, if you're looking to improve your general health, lose weight, increase hypertrophy, or increase athletic performance, I am able to help you reach your goals through scientifically proven practices.</p>
@@ -431,6 +430,7 @@
     </section><!-- End Services Section -->
     
 <!-- ======= Librarianship Section ======= -->
+<!-- Again, added PDFs with to display further content, changed icons, and updated content. I don't think I did anything in this section to edit the layout beyond insert an image between the sections including files-->
 <section id="skills" class="skills section-bg">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
@@ -446,7 +446,7 @@
     </div>
   </div>
 
-<h3 class="centered">MLIS Work Samples</h3>
+<h3 class="centered">MLIS Work Samples</h3> <!-- Added h3 here -->
 
 <div class="container" data-aos="fade-up">
   <div class="row Writing Portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -516,12 +516,11 @@
   </div>
 </div>
 </section><!-- End Librarianship Section -->
-<!-- what else should go here?-->  
 
-    <!-- ======= Removed Testimonials Section because nothing to put in it======= -->
-    
+    <!-- ======= Removed Testimonials Section because nothing to put in it======= -->    
 
     <!-- ======= Contact Section ======= -->
+    <!-- Made minimal changes here, but did add a bootstrap tooltip to the form due to it not functioning as desired-->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -544,9 +543,7 @@
                 <h4>Email:</h4>
                 <p>ryan.downiea@gmail.com</p>
               </div>
-
             </div>
-
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
@@ -572,7 +569,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit" data-toggle="tooltip" title="Form does not work, please use email instead">Send Message</button></div>
-            </form>
+            </form> <!-- Added tooltip in the above line-->
 
           </div>
 
